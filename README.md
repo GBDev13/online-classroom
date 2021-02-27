@@ -1,21 +1,49 @@
-# Next.js + Tailwind CSS Example
+# Teach Other
 
-This example shows how to use [Tailwind CSS](https://tailwindcss.com/) (v2) with Next.js. It follows the steps outlined in the official [Tailwind docs](https://tailwindcss.com/docs/guides/nextjs).
+Teach other is a private lesson scheduling service for college students.
 
-## Deploy your own
+This was the final project from an University class called "Projeto Transversal 1" (University of Brasília - Network Engineering)
 
-Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=next-example):
+## YouTube tutorial
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/vercel/next.js/tree/canary/examples/with-tailwindcss&project-name=with-tailwindcss&repository-name=with-tailwindcss)
+You can watch a full tutorial about this project on [YouTube](https://www.youtube.com/watch?v=MeYibJFi7p0&list=PLbV6TI03ZWYVxGBKyYJf_Qy6d4saMbCq3&index=2).
 
-## How to use
+## How to run this website
 
-Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init) or [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/) to bootstrap the example:
+- Create your own **.env.local** file based on **.env.example** (Create a mongoDB instance on MongoDB Atlas or docker container and paste the database url on **.env.local**, and also create an account on auth0 and paste he AUTH0 variables).
+
+- Install all dependencies with yarn:
 
 ```bash
-npx create-next-app --example with-tailwindcss with-tailwindcss-app
-# or
-yarn create next-app --example with-tailwindcss with-tailwindcss-app
+yarn
 ```
 
-Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
+- Start dev server:
+
+```bash
+yarn dev
+```
+
+## Technologies used
+
+- Node
+- Yarn
+- Typescript
+- Next.js
+- NextAuth (Authentication)
+- Auth0
+- Tailwind CSS
+- SWR (Client side caching)
+- MongoDB Atlas (cloud database as a service)
+- Vercel (hosting)
+
+## Features included
+
+- Authentication (create account/login)
+- List teachers by class
+- Schedule a private lesson
+- Spend and recieve a digital currency
+
+## Live version
+
+You can visit the live version of Teach Other on https://teach-other.vercel.app
